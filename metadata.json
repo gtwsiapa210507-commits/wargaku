@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix WargaKu Surabaya - Layanan Digital \u0026 Pengaduan Warga",
+  "description": "Aplikasi resmi layanan digital dan pengaduan warga Pemerintah Kota Surabaya. Layanan aspirasi publik, cek progres penanganan OPD, peta transparansi, dan darurat 112.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

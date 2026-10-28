@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fcf9f8;}body{overscroll-behavior:none;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'on-surface-variant': '#5b403d', 'inverse-surface': '#303030', 'surface-variant': '#e5e2e1', 'surface-bright': '#fcf9f8', 'on-primary': '#ffffff', 'secondary': '#b51925', 'primary-fixed': '#ffdad6', 'primary': '#b7131a', 'secondary-container': '#d8363a', 'inverse-on-surface': '#f3f0ef', 'primary-container': '#db322f', 'error': '#ba1a1a', 'tertiary-fixed-dim': '#ffb3ac', 'surface-container-low': '#f6f3f2', 'on-tertiary-fixed-variant': '#930010', 'surface-container-lowest': '#ffffff', 'on-tertiary-fixed': '#410003', 'on-surface': '#1b1c1c', 'tertiary-container': '#da3433', 'inverse-primary': '#ffb4ac', 'on-error-container': '#93000a', 'on-primary-fixed': '#410002', 'secondary-fixed': '#ffdad7', 'outline': '#906f6c', 'surface-container-high': '#eae7e7', 'primary-fixed-dim': '#ffb4ac', 'tertiary-fixed': '#ffdad6', 'on-secondary-fixed-variant': '#930015', 'on-primary-container': '#fffbff', 'on-background': '#1b1c1c', 'background': '#fcf9f8', 'surface-tint': '#bb171c', 'on-secondary-container': '#fffbff', 'on-secondary': '#ffffff', 'surface-dim': '#dcd9d9', 'surface-container': '#f0eded', 'on-error': '#ffffff', 'error-container': '#ffdad6', 'secondary-fixed-dim': '#ffb3ae', 'on-tertiary': '#ffffff', 'outline-variant': '#e4beb9', 'tertiary': '#b6171e', 'surface-container-highest': '#e5e2e1', 'surface': '#fcf9f8', 'on-secondary-fixed': '#410004', 'on-tertiary-container': '#fffbff', 'on-primary-fixed-variant': '#93000d' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'space-md': '1rem', 'margin': '1.25rem', 'space-xl': '2rem', 'space-xs': '0.25rem', 'gutter': '1rem', 'space-sm': '0.5rem', 'space-lg': '1.5rem' }, fontFamily: { 'headline-md': ['Plus Jakarta Sans'], 'label-lg': ['Plus Jakarta Sans'], 'label-md': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'headline-xl': ['Plus Jakarta Sans'], 'label-sm': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'headline-lg': ['Plus Jakarta Sans'], 'body-lg': ['Plus Jakarta Sans'] }, fontSize: { 'headline-md': ['18px', { lineHeight: '24px', letterSpacing: '-0.01em', fontWeight: '700' }], 'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0.01em', fontWeight: '700' }], 'label-md': ['12px', { lineHeight: '16px', fontWeight: '600' }], 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }], 'headline-xl': ['28px', { lineHeight: '36px', letterSpacing: '-0.02em', fontWeight: '800' }], 'label-sm': ['11px', { lineHeight: '14px', fontWeight: '600' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'headline-lg': ['22px', { lineHeight: '28px', letterSpacing: '-0.01em', fontWeight: '700' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '500' }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_2px_10px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Kembali" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-md text-headline-md text-on-surface truncate">Detail Pengaduan</h1></div><div class="flex items-center gap-space-sm"><button aria-label="Bantuan" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container active:scale-95 transition-all"><span class="material-symbols-outlined text-[20px]">help_outline</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-28">
+<!-- Top Municipal Crimson Banner (Sub-header Context) -->
+<div class="relative bg-gradient-to-r from-primary to-secondary px-margin pt-4 pb-10 text-on-primary">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/20 backdrop-blur-md">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Tiket Resmi WargaKu</span>
+</div>
+<span class="font-label-md text-label-md opacity-90">ID: #64436</span>
+</div>
+<div class="mt-2">
+<p class="font-label-sm text-label-sm opacity-80 uppercase tracking-widest">Pemerintah Kota Surabaya</p>
+<h2 class="font-headline-lg text-headline-lg font-extrabold tracking-tight mt-0.5">Dinas Sumber Daya Air &amp; Bina Marga</h2>
+</div>
+</div>
+<!-- Main Overlapping Content Sheet -->
+<div class="relative -mt-6 bg-surface-container-lowest rounded-t-3xl px-margin pt-6 flex flex-col gap-6 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+<!-- 1. Kartu Identitas Laporan -->
+<div class="bg-surface-container-low rounded-2xl p-4 flex flex-col gap-3.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold tracking-wide">
+            #64436/MC/VI/2025 · Dinas SDABM
+          </span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">
+            Jalan Rusak dan Berlubang
+          </h3>
+</div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-900 font-label-md text-label-md shrink-0 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+          Sedang Diproses
+        </span>
+</div>
+<div class="flex flex-col gap-2 pt-2 bg-surface-container-lowest/60 p-3 rounded-xl">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span>
+<span>Dilaporkan: <strong class="text-on-surface font-label-md text-label-md">02 Jun 2025 · 09:15 WIB</strong></span>
+</div>
+<div class="flex items-start gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+<span class="line-clamp-2">Jl. Dukuh Kupang Barat No. 24, Kec. Sawahan, Kota Surabaya</span>
+</div>
+</div>
+</div>
+<!-- 2. Tracker Tahapan Pengerjaan (Stepped Progress Bar) -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">timeline</span>
+          Tahapan Pengerjaan
+        </h4>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-bold">
+          Tahap 3 dari 4
+        </span>
+</div>
+<!-- Stepper Component -->
+<div class="bg-surface-container-low p-4 rounded-2xl flex flex-col gap-4">
+<div class="relative flex items-center justify-between w-full">
+<!-- Step Connectors -->
+<div class="absolute left-4 right-4 top-1/2 -translate-y-1/2 h-1 bg-surface-container-highest z-0"></div>
+<div class="absolute left-4 w-2/3 top-1/2 -translate-y-1/2 h-1 bg-primary z-0 transition-all duration-500"></div>
+<!-- Step 1: Diajukan -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold mt-1.5">Diajukan</span>
+</div>
+<!-- Step 2: Diverifikasi -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold mt-1.5">Diverifikasi</span>
+</div>
+<!-- Step 3: Lapangan (Active) -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md animate-pulse">
+<span class="material-symbols-outlined text-[18px]">engineering</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold mt-1.5">Lapangan</span>
+</div>
+<!-- Step 4: Selesai -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1.5">Selesai</span>
+</div>
+</div>
+<!-- Current Status Banner Card -->
+<div class="bg-surface-container-lowest p-3 rounded-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">speed</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">Progres Fisik: 75%</span>
+<span class="font-label-sm text-label-sm text-emerald-700 font-bold bg-emerald-50 px-1.5 py-0.2 rounded">Tepat Waktu</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Penghamparan lapis aspal AC-WC dijadwalkan siang ini.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Foto Bukti Pelapor -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">photo_camera</span>
+          Foto Bukti dari Pelapor
+        </h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1 Foto Lampiran</span>
+</div>
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-high h-48 w-full shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Close up photograph of a deep pothole on an urban asphalt road in Surabaya, Indonesia, with visible loose gravel, cracked road edges, taken during daylight morning, clear realistic street infrastructure photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArTnYRfSvbnIS098RQKnvsijyElBf0PgCxmshao35kkEJzMAHKR32YuhzeCoBKLLA6-GZoeU-1c1m1yTcYWRRDlj3MsPECzsTBhP5EtBON5nHY387XojFG2pdPIxKt2Lt0LTeWfbVpKw9o8vPr0Qknc8lbSzSHT1xfBB9BaDBKBHSLSkgRLOzLTkc1DOIVr5Pm5l07WzM-X4b6t3Z8jVqx1hAxFFRMxu4FS62wJLDEn968pa49_UPy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white">
+<div class="flex items-center gap-1.5 text-xs font-medium">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+<span>Dukuh Kupang Barat</span>
+</div>
+<span class="font-label-sm text-label-sm bg-black/40 backdrop-blur-md px-2 py-0.5 rounded-full">02 Jun 2025</span>
+</div>
+</div>
+</div>
+<!-- 4. Dokumentasi Pengerjaan & Transparansi OPD -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">history_edu</span>
+          Transparansi Pengerjaan OPD
+        </h4>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Terbuka Publik</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Timeline Item 2 (Newer First) -->
+<div class="bg-surface-container-low p-4 rounded-2xl flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">construction</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Dinas SDABM Kota Surabaya</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">06 Jun 2025 · 08:30 WIB</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-primary-fixed text-on-primary-fixed-variant font-bold">
+              Konstruksi
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+            Pengupasan aspal rusak dan pengerjaan lapis pondasi baru dengan pemadat jalan mini roller untuk memastikan kepadatan struktur.
+          </p>
+<div class="w-full h-44 rounded-xl overflow-hidden bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="Indonesian public works municipal road repair crew with yellow safety helmets and vests operating compact asphalt roller machine on a residential street in Surabaya, warm tropical morning light, crisp municipal engineering photo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUgIKvxu8z-IRWYH2a0CVs9j8VLDQt8empA2bUlnC-6lOiISmIi755CycEILsDsG0eJZKE4zCrCyVm1ZYh76euiyi985ZiBJya6s926_08uDzNNWu4PduJOYHaf_2ZZfvXHykcGyUGkUly9y6u7_sroBXVOZURizl-yfVh6FeQiiuMYhqyWK78AWIMK9aJz4GxpcLjjrWDUalmj50yKQlohhyadYk59F4BR7B3GeprfQUrbuy9Ki-m"/>
+<div class="absolute bottom-2 right-2 bg-black/60 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">photo</span>
+<span>Dokumentasi Alat Berat</span>
+</div>
+</div>
+</div>
+<!-- Timeline Item 1 -->
+<div class="bg-surface-container-low p-4 rounded-2xl flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">straighten</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Tim Reaksi Cepat Dinas SDABM</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">05 Jun 2025 · 14:10 WIB</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface-variant font-bold">
+              Survei
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+            Survei lokasi, pengukuran volume aspal, dan penandaan titik batas perbaikan dengan cat semprot teknis.
+          </p>
+<div class="grid grid-cols-2 gap-2">
+<div class="h-28 rounded-xl overflow-hidden bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="Civil engineer in reflective orange vest holding a measuring wheel tape measuring a damaged road pothole section in Surabaya, daytime documentary style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9CgHazsSpjzojDC0PeePqljBCujNh-42gdvGsWk0dnXlRplXmIJ9XcpiRijG1jXMUOmSnTqj41QMJ7Wt3Gl5KfzQe9hcBcqiVu53xpV7jsDoeom-gHcDWDet7_8iCAfCYckF9QHPSsiytYM9Equd4N_FdmzEJkaJcdAs2CdQze79aOFEu7p6PqVZAT0VnFWpYdoHl-UzWS2jzBP07rqEKvrLgs9C9Q_DfGdZHCYD5E193SMKycV-1"/>
+<span class="absolute bottom-1.5 left-1.5 text-[10px] font-semibold bg-black/50 text-white px-1.5 py-0.5 rounded">Pengukuran</span>
+</div>
+<div class="h-28 rounded-xl overflow-hidden bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="Road surface marked with bright white spray paint perimeter indicating road repair cutting zone, asphalt street texture, close up utility photo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzveeuMYdn3ZZunMjMrAKBITtMLvctq8G4NLW7o8z5yAlL6SSbD3qMpi3GOojtXBZxA7hTnAt_hgbBo61CblwQqnmEgjluxaBk8R3bXaM22weK3tZ1dQwUEkVW2vhluBALbehJajPr6CYwS-4OIHvTcu2j_ayYqzY6lqR5Ec-Avew6Y6-b_Xa959NHKdZlJIE0KXrPoB199WdqW0eOJrTObikCP_UBrKMoHZ-4LLs2YVH84GOJso0k"/>
+<span class="absolute bottom-1.5 left-1.5 text-[10px] font-semibold bg-black/50 text-white px-1.5 py-0.5 rounded">Penandaan</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Ruang Diskusi Terbuka Pelapor & Petugas -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">forum</span>
+          Ruang Diskusi Interaktif
+        </h4>
+<span class="font-label-sm text-label-sm text-emerald-700 flex items-center gap-1 font-bold">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span> OPD Aktif
+        </span>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-4 flex flex-col gap-3">
+<!-- Message Bubbles Container -->
+<div class="flex flex-col gap-3" id="chat-stream">
+<!-- OPD Bubble -->
+<div class="flex items-start gap-2.5 max-w-[90%]">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 mt-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Admin SDABM</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Hari ini · 10:04 WIB</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-2xl rounded-tl-sm text-on-surface shadow-sm">
+<p class="font-body-md text-body-md">
+                  Halo Bapak/Ibu Pelapor, laporan Anda nomor <strong class="text-primary font-bold">#64436</strong> sedang kami tuntaskan hari ini. Estimasi pengaspalan selesai petang nanti. Mohon berhati-hati saat melintasi area proyek.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Chat Input Field -->
+<div class="relative mt-2 flex items-center gap-2">
+<div class="relative flex-1">
+<input class="w-full h-11 bg-surface-container-lowest rounded-full pl-4 pr-10 text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md shadow-sm outline-none focus:ring-2 focus:ring-primary/40 transition-all" id="reply-input" placeholder="Ketik pesan konfirmasi ke OPD..." type="text"/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full text-on-surface-variant flex items-center justify-center hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">attach_file</span>
+</button>
+</div>
+<button class="w-11 h-11 rounded-full bg-primary hover:bg-secondary text-on-primary flex items-center justify-center shrink-0 shadow-md active:scale-95 transition-all" id="btn-send-message" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 6. Verifikasi & Kepuasan Warga -->
+<div class="bg-gradient-to-br from-surface-container-low via-surface-container to-surface-container-low rounded-2xl p-4 flex flex-col gap-4 shadow-sm mb-4">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-2xl bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-extrabold leading-tight">Apakah masalah ini sudah beres?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Konfirmasi warga sangat menentukan evaluasi mutu dinas terkait.</p>
+</div>
+</div>
+<!-- Rating Bintang Interaktif -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl flex flex-col items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Beri Nilai Kecepatan &amp; Kualitas Respon</span>
+<div class="flex items-center gap-2 py-1" id="star-rating-box">
+<button class="star-btn text-amber-400 active:scale-125 transition-transform" data-star="1" type="button"><span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">star</span></button>
+<button class="star-btn text-amber-400 active:scale-125 transition-transform" data-star="2" type="button"><span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">star</span></button>
+<button class="star-btn text-amber-400 active:scale-125 transition-transform" data-star="3" type="button"><span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">star</span></button>
+<button class="star-btn text-amber-400 active:scale-125 transition-transform" data-star="4" type="button"><span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">star</span></button>
+<button class="star-btn text-amber-400 active:scale-125 transition-transform" data-star="5" type="button"><span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">star</span></button>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold" id="star-feedback">Luar Biasa Cepat (5/5)</span>
+</div>
+<!-- Tombol Aksi Verifikasi -->
+<div class="flex flex-col gap-2 pt-1">
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md hover:bg-secondary active:scale-[0.98] transition-all" id="btn-settled" type="button">
+<span class="material-symbols-outlined text-[20px]">thumb_up</span>
+          Sudah Beres (Kirim Apresiasi)
+        </button>
+<button class="w-full h-11 rounded-xl bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-surface-variant active:scale-[0.98] transition-all" id="btn-reopen" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+          Belum Tuntas, Ajukan Evaluasi Ulang
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive micro-logic for responsive user experience
+  (function() {
+    const starButtons = document.querySelectorAll('#star-rating-box .star-btn');
+    const feedbackText = document.getElementById('star-feedback');
+    const labels = [
+      'Perlu Perbaikan Serius (1/5)',
+      'Kurang Memuaskan (2/5)',
+      'Cukup Baik (3/5)',
+      'Sangat Baik & Tanggap (4/5)',
+      'Luar Biasa Cepat (5/5)'
+    ];
+
+    starButtons.forEach((btn, idx) => {
+      btn.addEventListener('click', () => {
+        const rating = idx + 1;
+        starButtons.forEach((b, i) => {
+          const icon = b.querySelector('.material-symbols-outlined');
+          if (i < rating) {
+            b.classList.remove('text-surface-container-highest');
+            b.classList.add('text-amber-400');
+            icon.style.fontVariationSettings = "'FILL' 1";
+          } else {
+            b.classList.remove('text-amber-400');
+            b.classList.add('text-surface-container-highest');
+            icon.style.fontVariationSettings = "'FILL' 0";
+          }
+        });
+        if (feedbackText) feedbackText.textContent = labels[idx];
+      });
+    });
+
+    const replyInput = document.getElementById('reply-input');
+    const sendBtn = document.getElementById('btn-send-message');
+    const chatStream = document.getElementById('chat-stream');
+
+    const handleSend = () => {
+      const text = replyInput ? replyInput.value.trim() : '';
+      if (!text || !chatStream) return;
+
+      const userBubble = document.createElement('div');
+      userBubble.className = 'flex items-start gap-2.5 max-w-[90%] self-end justify-end';
+      userBubble.innerHTML = `
+        <div class="flex flex-col items-end">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Baru saja</span>
+            <span class="font-label-sm text-label-sm text-on-surface font-bold">Anda (Pelapor)</span>
+          </div>
+          <div class="bg-primary text-on-primary p-3 rounded-2xl rounded-tr-sm shadow-sm">
+            <p class="font-body-md text-body-md">${text.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</p>
+          </div>
+        </div>
+        <div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center shrink-0 mt-1 shadow-sm">
+          <span class="material-symbols-outlined text-[16px]">person</span>
+        </div>
+      `;
+      chatStream.appendChild(userBubble);
+      replyInput.value = '';
+    };
+
+    if (sendBtn) sendBtn.addEventListener('click', handleSend);
+    if (replyInput) {
+      replyInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') handleSend();
+      });
+    }
+
+    const btnSettled = document.getElementById('btn-settled');
+    if (btnSettled) {
+      btnSettled.addEventListener('click', () => {
+        btnSettled.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span> Terima Kasih atas Apresiasi Anda!';
+        btnSettled.classList.remove('bg-primary');
+        btnSettled.classList.add('bg-emerald-700');
+      });
+    }
+  })();
+</script></main></body></html>

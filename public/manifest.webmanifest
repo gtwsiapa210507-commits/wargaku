@@ -1,0 +1,24 @@
+{
+  "name": "WargaKu Surabaya - Layanan Digital & Pengaduan Warga",
+  "short_name": "WargaKu",
+  "description": "Aplikasi resmi layanan digital dan pengaduan warga Pemerintah Kota Surabaya.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fcf9f8",
+  "theme_color": "#0284c7",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/aistudio/Image_1_7bdf7456.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/aistudio/Image_1_7bdf7456.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
